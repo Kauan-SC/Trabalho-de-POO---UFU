@@ -1,19 +1,23 @@
+package livros;
+
+// Classe Livro que representa um livro na biblioteca
 public class Livro {
 
-    // Definindo a variáveis
     private int id;
     private String titulo;
     private String autor;
     private int ano;
     private boolean disponibilidade;
 
-    // Cadastrando as variáveis
-    public Livro(int id, String titulo, String autor, int ano, boolean disponibilidade) {
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // Construtor da classe Livro
+    public Livro(int id, String titulo, String autor, int ano) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
-        this.disponibilidade = disponibilidade;
+        this.disponibilidade = true; // Por padrão, o livro está disponível
     }
 
     public String getAutor() {
@@ -48,13 +52,6 @@ public class Livro {
         this.ano = ano;
     }
 
-    public boolean isDisponibilidade() {
-        return disponibilidade;
-    }
-
-    public void setDisponibilidade(boolean disponibilidade) {
-        this.disponibilidade = disponibilidade;
-    }
 
     @Override
     public String toString() {

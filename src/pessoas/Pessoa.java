@@ -1,5 +1,6 @@
 package pessoas;
 
+// Classe abstrata Pessoa
 public abstract class Pessoa {
     private int id;
     private String nome;
@@ -11,6 +12,9 @@ public abstract class Pessoa {
         this.cpf = cpf;
     }
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    // Métodos getters e setters da classe Pessoa
     public int getId() { return id; }
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }

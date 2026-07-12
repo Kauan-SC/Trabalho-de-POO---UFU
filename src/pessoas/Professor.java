@@ -1,5 +1,6 @@
 package pessoas;
 
+// Classe Professor que herda de Pessoa
 public class Professor extends Pessoa {
     private String departamento;
     private String disciplina;
@@ -10,6 +11,9 @@ public class Professor extends Pessoa {
         this.disciplina = disciplina;
     }
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    // Métodos getters da classe Professor
     public String getDepartamento() { return departamento; }
     public String getDisciplina() { return disciplina; }
 

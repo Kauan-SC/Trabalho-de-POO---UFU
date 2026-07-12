@@ -1,5 +1,6 @@
 package pessoas;
 
+// Classe Bibliotecario que herda de Pessoa
 public class Bibliotecario extends Pessoa {
     private String matriculaFuncional;
 
@@ -8,6 +9,9 @@ public class Bibliotecario extends Pessoa {
         this.matriculaFuncional = matriculaFuncional;
     }
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    // Método getter da classe Bibliotecario
     public String getMatriculaFuncional() { return matriculaFuncional; }
 
     @Override
