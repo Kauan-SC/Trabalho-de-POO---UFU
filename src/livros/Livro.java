@@ -52,6 +52,13 @@ public class Livro {
         this.ano = ano;
     }
 
+    public boolean isDisponibilidade() {
+        return disponibilidade;
+    }
+
+    public void setDisponibilidade(boolean disponibilidade) {
+        this.disponibilidade = disponibilidade;
+    }
 
     @Override
     public String toString() {

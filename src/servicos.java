@@ -45,7 +45,7 @@ public class servicos {
         System.out.println("Digite o ano de lançamento: ");
         int ano = scanner.nextInt();
         scanner.nextLine();
-        Livro livro = new Livro(id, titulo, autor, ano, true);
+        Livro livro = new Livro(id, titulo, autor, ano);
         System.out.println();
         System.out.println("Livro adicionado com sucesso!");
         System.out.println();
