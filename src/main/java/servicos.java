@@ -1,15 +1,14 @@
-package servicos;
+import java.util.ArrayList;
 
 import emprestimos.Emprestimo;
 import excecoes.LivroIndisponivelException;
 import excecoes.LivroNaoEncontradoException;
 import excecoes.PessoaNaoEncontradaException;
-import java.util.ArrayList;
 import livros.Livro;
 import pessoas.Aluno;
 import pessoas.Pessoa;
 
-public class Servicos {
+public class servicos {
 
     public Livro buscarLivro(ArrayList<Livro> livros, int id) throws LivroNaoEncontradoException {
         for (Livro livro : livros) {
