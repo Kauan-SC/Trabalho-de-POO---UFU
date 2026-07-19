@@ -9,13 +9,15 @@ public class Bibliotecario extends Pessoa {
         this.matriculaFuncional = matriculaFuncional;
     }
 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
     // Método getter da classe Bibliotecario
-    public String getMatriculaFuncional() { return matriculaFuncional; }
+    public String getMatriculaFuncional() {
+        return matriculaFuncional;
+    }
 
     @Override
     public String getTipo() {
-        return "Bibliotecário";
+        return "Bibliotecario";
     }
 }

@@ -12,13 +12,26 @@ public abstract class Pessoa {
         this.cpf = cpf;
     }
 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    
     // Métodos getters e setters da classe Pessoa
-    public int getId() { return id; }
-    public String getNome() { return nome; }
-    public void setNome(String nome) { this.nome = nome; }
-    public String getCpf() { return cpf; }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
 
     public abstract String getTipo();
 
