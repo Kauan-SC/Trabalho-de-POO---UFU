@@ -83,3 +83,10 @@ Anotações do Projeto, foi criado mais para alinhamento com a equipe e repassar
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 O Apache Maven serve para conectar o projeto com o banco de dados, gerenciar dependências e facilitar a execução do projeto. Ele permite que você configure o ambiente de desenvolvimento de forma eficiente, garantindo que todas as bibliotecas necessárias estejam disponíveis e que o projeto seja executado corretamente.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OBSERVAÇÕES ->
+
+Como esse é apenas um trabalho escolar, o Banco de Dados é apenas virtual, o Maven é quem conecta o Banco de Dados e o projeto, sendo um facilitador
+Ou seja, foi feito para rodar apenas localmente, dentro das Anotacoes.md coloquei um paso a passo do que é necessário baixar e adicionar para rodar o projeto na sua máquina
