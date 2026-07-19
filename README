@@ -1,0 +1,85 @@
+Estrutura do Projeto
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> A pasta emprestimos contém a classe Emprestimo, que representa os empréstimos realizados na biblioteca. Ela possui atributos como id, livro, pessoa, data de empréstimo e data de devolução, além de métodos para acessar e modificar essas informações.
+
+O arquivo Emprestimo.java define a estrutura e o comportamento dos empréstimos, permitindo que sejam criados, consultados e atualizados conforme necessário.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> A pasta excecoes contém as classes de exceções personalizadas que são lançadas quando ocorrem erros específicos no sistema de biblioteca. Essas exceções ajudam a identificar e tratar situações como livros não encontrados, livros indisponíveis e pessoas não encontradas.
+
+O arquivo LivroIndisponivelException.java é lançada quando um livro solicitado para empréstimo não está disponível.
+
+O arquivo LivroNaoEncontradoException.java é lançada quando um livro solicitado não é encontrado no sistema.
+
+O arquivo PessoaNaoEncontradaException.java é lançada quando uma pessoa solicitada não é encontrada no sistema.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> A pasta gui contém a classe JanelaPrincipal, responsável por toda a interface gráfica do sistema, feita com Swing. Ela monta a janela principal com três abas: Livros, Pessoas e Empréstimos.
+
+O arquivo JanelaPrincipal.java cria as tabelas de cada aba, os botões de ação (adicionar/excluir livro, cadastrar aluno/professor/bibliotecário, emprestar/devolver) e, ao abrir o programa, carrega os dados já existentes no banco através dos DAOs (LivroDAO, PessoaDAO, EmprestimoDAO). Cada ação do usuário na tela reflete tanto na lista em memória quanto no banco de dados.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> A pasta livros contém a classe Livro, que representa os livros disponíveis na biblioteca. Ela possui atributos como id, título, autor, ano de publicação e disponibilidade, além de métodos para acessar e modificar essas informações.
+
+O arquivo Livro.java define a estrutura e o comportamento dos livros, permitindo que sejam criados, consultados e atualizados conforme necessário.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> A pasta persistencia contém as classes responsáveis por gerenciar a persistência dos dados da biblioteca, como livros, pessoas e empréstimos. Ela inclui as classes que lidam com a conexão e as operações no banco de dados MySQL.
+
+O arquivo ConexaoBD.java é responsável por estabelecer a conexão com o banco de dados, permitindo que as operações de leitura e escrita sejam realizadas de forma eficiente.
+
+O arquivo EmprestimoDAO.java é responsável por gerenciar os empréstimos realizados na biblioteca, incluindo a criação, atualização e exclusão de registros de empréstimos no banco de dados.
+
+O arquivo LivroDAO.java é responsável por gerenciar os livros cadastrados na biblioteca, incluindo a criação, atualização e exclusão de registros de livros no banco de dados.
+
+O arquivo PessoaDAO.java é responsável por gerenciar as pessoas cadastradas na biblioteca, incluindo a criação, atualização e exclusão de registros de pessoas no banco de dados.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> A pasta pessoas contém as classes relacionadas às pessoas que utilizam a biblioteca, como Aluno, Bibliotecário, Pessoa e Professor.
+
+A classe Pessoa é a superclasse que define os atributos e métodos comuns a todas as pessoas, como id, nome e cpf.
+
+O arquivo Aluno.java herda de Pessoa e representa os estudantes que podem realizar empréstimos de livros. Ela possui atributos adicionais, como matrícula, curso e uma lista de empréstimos ativos.
+
+O arquivo Bibliotecario.java herda de Pessoa e representa os funcionários responsáveis pela gestão da biblioteca. Ela possui como atributo adicional a matrícula funcional.
+
+O arquivo Professor.java herda de Pessoa e representa os docentes que podem realizar empréstimos de livros. Ela possui atributos adicionais, como departamento e disciplina.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Main do Projeto
+
+-> Biblioteca.java é o Main do projeto, onde é possível interagir com o sistema de biblioteca. Ele permite que você adicione livros, pessoas, realize empréstimos e devoluções, além de exibir informações sobre os livros e pessoas cadastradas.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> Servicos.java foi a primeira versão da lógica do sistema (buscar livros/pessoas, emprestar e devolver), criada e usada para testar as regras de disponibilidade e existência antes da implementação do front-end (gui). Com a JanelaPrincipal assumindo essa lógica diretamente, a classe ficou desnecessária e não é mais utilizada pelo projeto.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enquanto o projeto está na estrutura src\main\java pois é a forma do maven identificar o projeto, ele pode ser executado diretamente na IDE, como o Eclipse ou IntelliJ, ou através do terminal utilizando o comando mvn exec:java, garantindo que todas as dependências e configurações do Maven sejam respeitadas.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A pasta .env guarda as variáveis de ambiente necessárias para a configuração do banco de dados, como URL, usuário e senha.
+
+DB_HOST=
+DB_PORT=
+DB_NAME=
+DB_USER=
+DB_PASSWORD=
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Anotações do Projeto, foi criado mais para alinhamento com a equipe e repassar para o professor, mas pode ser útil para o entendimento do projeto.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O Apache Maven serve para conectar o projeto com o banco de dados, gerenciar dependências e facilitar a execução do projeto. Ele permite que você configure o ambiente de desenvolvimento de forma eficiente, garantindo que todas as bibliotecas necessárias estejam disponíveis e que o projeto seja executado corretamente.

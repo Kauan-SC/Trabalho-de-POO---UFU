@@ -4,8 +4,8 @@
 [x] - Criação do sistema básico de biblioteca (Cadastro de Biblioteca, Serviço, Opções, Livos)
 [X] - Reestruturação do sistema adicionando Objeto Pessoa(Aluno, Bibliotecário, Professor)
 [X] - Nomear e separar de forma congruente cada ação para fácil identificação
-[ ] - Conectar java a um Banco de Dados
-[ ] - Criar Front-End para projeto
+[X] - Conectar java a um Banco de Dados
+[X] - Criar Front-End para projeto
 [ ] - Realizar testes de Adição, Emprestimo e outros...
 
 
