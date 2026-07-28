@@ -6,7 +6,7 @@
 [X] - Nomear e separar de forma congruente cada ação para fácil identificação
 [X] - Conectar java a um Banco de Dados
 [X] - Criar Front-End para projeto
-[ ] - Realizar testes de Adição, Emprestimo e outros...
+[X] - Realizar testes de Adição, Emprestimo e outros...
 
 
 ## Vídeos/Tutoriais Assistidos
